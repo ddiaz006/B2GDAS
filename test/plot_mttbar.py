@@ -13,7 +13,7 @@ from optparse import OptionParser
 import numpy as np
 
 #declare cut values
-tau32_cut = 0.9 
+tau32_cut = 0.8 
 mass_sdHigh = 250.
 mass_sdLow  = 110.
 LeptonPtRel_cut = 20.
@@ -21,7 +21,8 @@ bdisc_cut = 0.7
 LeptonDRMin_cut = 0.4
 hadTopCandP4Perp_cut = 100.
 #write to temp file
-fh = open("ttbar_bkg.txt", "a")
+#fh = open("3000_sig.txt", "a")
+fh = open("num.txt", "a")
 
 def plot_mttbar(argv) :
     parser = OptionParser()
@@ -61,8 +62,6 @@ def plot_mttbar(argv) :
     (options, args) = parser.parse_args(argv)
     argv = []
     
-    #write to temp file
-    fh = open("num.txt", "a")
 
     #print '===== Command line options ====='
     #print options
